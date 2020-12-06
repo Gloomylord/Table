@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@200;300;400;500;600&display=swap');
+
+.container {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    margin-bottom: 20px;
+    align-self: center;
+}
+
+.table {
+    font-family: 'Commissioner', sans-serif;
+    border-spacing: 0 !important;
+    border-radius: 5px;
+    overflow-x: auto;
+    width: 100%;
+}
+
+.table :first-child tr:first-child {
+    border-radius: 5px 5px 0 0;
+}
+
+.table > :first-child tr:first-child :first-child {
+    border-radius: 5px 0 0 0;
+}
+
+.table > :first-child tr:first-child :last-child {
+    border-radius: 0 5px 0 0;
+}
+
+.table > :last-child tr:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.caption {
+    font-weight: 600;
+    font-size: 35px;
+    padding: 15px 5px;
+    margin: 0;
+}
+
+.table svg {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    transition: .2s;
+}
+
+.thead {
+    background: #cecece;
+    font-weight: 500;
+}
+
+.tbody {
+    background: #fff;
+}
+
+.tbody > * > * {
+    border-bottom: 1px solid #a0a0a0;
+}
+
+.tbody > :last-child > * {
+    border-bottom: 0;
+}
+
+.tfoot {
+    background: #a8a8a8;
+}
+
+.cell {
+    transition: .2s;
+    padding: 10px 20px;
+}
+
+.cell:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+.asc > svg {
+    transform: rotateZ(180deg);
+}
+
+.tr:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+.cell span {
+    opacity: 0;
+}
+
+.cell:hover span {
+    opacity: .3;
+}
+
+.chose {
+    opacity: 1 !important;
+}
+
+.arrow svg {
+    position: relative;
+    top: 3px;
+}
+
+.sortable {
+    cursor: pointer;
+}
